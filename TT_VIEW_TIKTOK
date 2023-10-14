@@ -139,7 +139,7 @@ def send(__device_id, __install_id, cdid, openudid):
             try:
                 if response.json()['status_code'] == 0:
                     _lock.acquire()
-                    print(f'{do}[{vang}HDT - TOOL{do}] {do}[{xanh_la}BUFF VIEW SUCCESS{do}] {do}{xanh_duong}+: {trang}{success}{do} View')
+                    print(f'{do}[{vang}JUSST - TOOL{do}] {do}[{xanh_la}BUFF VIEW SUCCESS{do}] {do}{xanh_duong}+: {trang}{success}{do} View')
                     success += 1
                     _lock.release()
             except:
