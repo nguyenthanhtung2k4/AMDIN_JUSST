@@ -1,0 +1,181 @@
+##   UPLOAD TDS  10/10/2023
+## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
+## TINH NANG CAY VIEW TIKTOK 
+# >>> XOA TINH NANG IG DI VI LOI 
+## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
+#>>? KEY FREE 1 TUAN
+
+
+from colorama import Fore,Style,Back
+import re , os, sys,requests
+from time import*
+from pystyle import System
+do="\033[1;31m"
+xanh_lam="\033[1;32m"
+vang="\033[1;33m"
+xn="\033[1;34m"
+tim="\033[1;35m"
+blue="\033[1;36m"
+trang="\033[1;97m"
+nenden = "\033[40m"
+nendo  = "\033[41m"
+nenxanhla = "\033[42m"
+nencam = "\033[43m"
+nenxanhduong = "\033[44m"
+nentim = "\033[45m"
+nenxanhduongnhat = "\033[46m"
+f=Style.RESET_ALL
+den=Fore.BLACK
+ngang=f'{do}=>'
+System.Clear()
+###########################
+
+url_logo="https://run.mocky.io/v3/9b891cc5-52a0-4ca2-9003-28009dcab7f2"
+url1="https://run.mocky.io/v3/72c3072d-7f28-4557-8431-ba8ce61dda3e"
+url2="https://run.mocky.io/v3/1ceb0b62-44c6-4b26-8034-5f48ad918841"
+### upload  file toool fb new 10/10/2023
+url3='https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/TT_TDS_FB%5BV3%5D'
+url4="https://run.mocky.io/v3/6eeafb28-4046-4548-83ac-4f452ff19230"
+url5="https://run.mocky.io/v3/e99e9bcb-fe01-4ae7-a949-dc232569387a"
+url6="https://run.mocky.io/v3/076679f1-0ece-45d9-a759-f343b556424f"
+### TINH NANG IG  LOAI BO  url6="https://run.mocky.io/v3/68a1f442-594b-4062-b475-e9f1016858a1"
+# upload  tinh ngan  tiktok  view 
+url_view_tiktok="https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/TT_VIEW_TIKTOK"
+url_proxy=""
+url7=""### them tinh nang 
+
+###################################################### download file ve chay tiktok
+bao_loi='''
+                LỖI TẢI VỀ 
+             :((     :((
+XIN VUI LÒNG LIÊN HỆ VỚI ADMIN  ĐỂ ĐƯỢC HỖ TRỢ
+
+
+          '''
+def download(link_file,name):
+          response = requests.get(link_file )
+          if response.status_code == 200:
+                with open(name, 'wb') as File:
+                    File.write(response.content)
+                    print(f'Tải về thành công: {name}')
+          else:
+                   ### BAO LOI  TOOL  TAI FILE VE
+                print(f'Không thể tải về: {response.status_code}')
+                System.Clear();
+                print(bao_loi);
+                exit();
+
+################################################
+exec(requests.get(url=url_logo).text)
+tds=(f'''{trang}╔═════════════════════╗
+║{vang}  Tool Trao Đổi Sub  {trang}║    
+╚═════════════════════╝      
+{ngang} {xanh_lam}Nhập Số {vang}[1] {xanh_lam}Tool TDS Profile{vang}[TK-MK]
+{ngang} {xanh_lam}Nhập Số {vang}[2] {xanh_lam}Tool TDS Profile{vang}[TOKEN]
+----------------------------------------------
+{ngang} {xanh_lam}Nhập Số {vang}[3] {xanh_lam}Tool {do}Upload{xanh_lam} TDS FB_New{vang}[v3]
+{ngang} {xanh_lam}Nhập Số {vang}[4] {xanh_lam}Tool Phien Ban Cu TDS FB{vang}[v2]
+----------------------------------------------
+{ngang} {xanh_lam}Nhập Số {vang}[5] {xanh_lam}Tool TDS Tiktok{vang}[V0]
+{ngang} {xanh_lam}Nhập Số {vang}[6] {xanh_lam}Tool TDS {do}Now-TIKTOK{vang}[V1]
+
+{trang}╔═════════════════════╗
+║{vang}     Tool TIKTOK{trang}     ║    
+╚═════════════════════╝ 
+{ngang} {xanh_lam}Nhập Số {vang}[7] {xanh_lam}Tool TikTok{do} View{vang} [New]
+{trang}╔══════════════════════╗
+║{vang}     Tool - JUSST{trang}     ║    
+╚══════════════════════╝ 
+{ngang}{do}Download {xanh_lam}Tool CHECK PROXY
+└────╼[ https://www.youtube.com/watch?v=lontD8W03rg ]
+
+{f}''')
+print(tds)
+
+lua_chon=int(input(f'{vang}=>{trang}Nhập Số Chạy :')) 
+################################################
+try:
+    if lua_chon==1:
+        System.Clear();
+        print(f'Tool TDS Profile{vang}[TK-MK]')
+        exec(requests.get(url=url_logo).text)
+        exec(requests.get(url=url1).text)
+    if lua_chon ==2:
+        print(f'Tool TDS Profile{vang}[TOKEN]') 
+        System.Clear();
+        exec(requests.get(url=url_logo).text)
+        exec(requests.get(url=url2).text)
+        ## auto  tds fb 
+    if lua_chon==4:
+        print(f'Tool Auto TDS FB{vang}[v2]')
+        System.Clear();
+        exec(requests.get(url=url_logo).text)
+        exec(requests.get(url=url4).text)
+        ## toool  tds tiktok thuong
+    if lua_chon==5:
+        print(f'Tool TDS Tiktok{vang}[V0]')
+        System.Clear();
+        exec(requests.get(url=url_logo).text)
+        exec(requests.get(url=url5).text)
+        ### toool  tds now
+    if lua_chon==6:
+        print(f'Tool TDS {do}Now-TIKTOK{vang}[V1]')
+        System.Clear();
+        exec(requests.get(url=url_logo).text)
+        exec(requests.get(url=url6).text)
+     #### upload  tds fb 
+    if lua_chon==3:
+        print('Tool Upload New TDS-FB[V3]')
+        System.Clear();
+        exec(requests.get(url=url_logo).text)
+        exec(requests.get(url=url3).text)
+    if lua_chon==7:
+
+          System.Clear();
+          print('Tool TikTok-View [New]')
+          ### kiem tra file co ton taiv hay khnog 
+          # cac ten file
+          name1='config.json'
+          name2='devices.txt'
+          name3='proxies.txt'
+          link_file1='https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/config.json'
+          link_file2='https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/devices.txt'
+          link_file3='https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/proxies.txt'
+          ktra1=os.path.isfile(name1)
+          ktra2=os.path.isfile(name2)
+          ktra3=os.path.isfile(name3)
+          if(ktra1==True):
+                   print("File ton tai")
+          else:
+                   download(link_file1,name1)
+          if(ktra2==True):
+                   print("File ton tai")
+          else:
+                   download(link_file2,name2)
+          if(ktra3==True):
+                   print("File ton tai")
+          else:
+                   download(link_file3,name3)
+          ########################33 VAO TOOL TIKTOK VIEW 
+          System.Clear()
+          exec(requests.get(url=url_logo).text)
+          exec(requests.get(url=url_view_tiktok).text)
+    if lua_chon==8:
+          System.Clear();
+          print('UPLOAD')
+          exec(requests.get(url=url_logo).text)
+
+    if lua_chon==9:
+          System.Clear();
+          print('UPLOAD')
+          exec(requests.get(url=url_logo).text)
+          exit();
+        #exec(requests.get(url=url7).text)
+    else: 
+        System.Clear()
+        exec(requests.get(url=url_logo).text)
+        print('Vui lòng chạy lại')    
+except:
+    print('Chay lai :((')
+    print("Chayj lại  không được liên hệ Admin ")
+    exit;
