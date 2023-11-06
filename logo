@@ -1,0 +1,44 @@
+from colorama import Fore,Style,Back
+import re , os, sys
+from time import*
+do="\033[1;31m"
+xanh_lam="\033[1;32m"
+vang="\033[1;33m"
+xn="\033[1;34m"
+tim="\033[1;35m"
+blue="\033[1;36m"
+trang="\033[1;97m"
+nenden = "\033[40m"
+nendo  = "\033[41m"
+nenxanhla = "\033[42m"
+nencam = "\033[43m"
+nenxanhduong = "\033[44m"
+nentim = "\033[45m"
+nenxanhduongnhat = "\033[46m"
+
+f=Style.RESET_ALL
+den=Fore.BLACK
+JUSST=f'''
+
+        {Fore.CYAN}╔══════════════════════╗
+        ║{f+xanh_lam}    ╦╦ ╦╔═╗╔═╗╔╦╗     {Fore.CYAN}║
+        ║{f+blue}    ║║ ║╚═╗╚═╗ ║      {Fore.CYAN}║
+        ║{f+xn}   ╚╝╚═╝╚═╝╚═╝ ╩      {Fore.CYAN}║
+        {Fore.CYAN}╚══════════════════════╝
+
+{f+vang}----------------------------------------------
+{trang}┌─[{nenxanhduongnhat+Fore.BLACK}Content]{f}
+{trang}└────╼{nencam+trang}[Admin: Hoangsontung]{f}
+
+{trang}┌─[{nendo+tim}Contact Me]{f}
+{trang}└╼●{do}Vision  :{xn}[3.2.11]{f}
+{trang}└╼●{do}Gmail   :{xn}justsmoke2k4master@gmail.com{f}
+{trang}└╼●{do}Telegram:{xn}https://t.me/hoangsontungjusst{f}
+{trang}└╼●{do}Youtube :{xn}https://www.youtube.com/channel/UCg2Va4MgkdJ3fAfBtqaCKXg{f}
+{trang}==============================================
+'''    
+        
+for x in JUSST:
+    sys.stdout.write(x)
+    sys.stdout.flush()
+    sleep(0.000125)        
