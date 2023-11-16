@@ -1,10 +1,16 @@
+##   UPLOAD TDS  16/11/2023
+## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
+## TINH NANG CAY VIEW TIKTOK 
+# >>> XOA TINH NANG IG DI VI LOI 
+## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
+#>>? KEY FREE 1 TUAN
 ##   UPLOAD TDS  06/11/2023
 ## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
 ## TINH NANG CAY VIEW TIKTOK 
 # >>> XOA TINH NANG IG DI VI LOI 
 ## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
 #>>? KEY FREE 1 TUAN
-
+#>>>>>>>>  chuyen file tu run mokey sang github
 
 from colorama import Fore,Style,Back
 import re , os, sys,requests
@@ -30,14 +36,14 @@ ngang=f'{do}=>'
 System.Clear()
 ###########################
 
-url_logo="https://run.mocky.io/v3/9b891cc5-52a0-4ca2-9003-28009dcab7f2"
-url1="https://run.mocky.io/v3/72c3072d-7f28-4557-8431-ba8ce61dda3e"
-url2="https://run.mocky.io/v3/1ceb0b62-44c6-4b26-8034-5f48ad918841"
+url_logo="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/LOGO"
+url1="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_FROFILE_TK_MK"
+url2="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_PROFILE_TOKEN"
 ### upload  file toool fb new 10/10/2023
 url3='https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/TT_TDS_FB%5BV3%5D'
-url4="https://run.mocky.io/v3/6eeafb28-4046-4548-83ac-4f452ff19230"
-url5="https://run.mocky.io/v3/e99e9bcb-fe01-4ae7-a949-dc232569387a"
-url6="https://run.mocky.io/v3/076679f1-0ece-45d9-a759-f343b556424f"
+url4="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_FB_CA_NHAN_CU"
+url5="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_TIKTOK_THUONG"
+url6="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_TIKTOK_NOW"
 ### TINH NANG IG  LOAI BO  url6="https://run.mocky.io/v3/68a1f442-594b-4062-b475-e9f1016858a1"
 # upload  tinh ngan  tiktok  view 
 url_view_tiktok="https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/TT_VIEW_TIKTOK"
