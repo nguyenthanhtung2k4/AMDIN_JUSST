@@ -11,6 +11,13 @@
 ## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
 #>>? KEY FREE 1 TUAN
 #>>>>>>>>  chuyen file tu run mokey sang github
+##   UPLOAD TDS  06/11/2023
+## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
+## TINH NANG CAY VIEW TIKTOK 
+# >>> XOA TINH NANG IG DI VI LOI 
+## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
+#>>? KEY FREE 1 TUAN
+
 
 from colorama import Fore,Style,Back
 import re , os, sys,requests
@@ -105,7 +112,13 @@ try:
         System.Clear();
         print(f'Tool TDS Profile{vang}[TK-MK]')
         exec(requests.get(url=url_logo).text)
-        exec(requests.get(url=url1).text)
+        print('''
+TOOL TDS-PROFILE TK-MK 
+HIỆN ĐÃ NGỪNG HOẠT ĐỘNG MONG BẠN CHỌN TOOL
+
+THANK YOU!
+              ''')
+     
     if lua_chon ==2:
         print(f'Tool TDS Profile{vang}[TOKEN]') 
         System.Clear();
@@ -179,8 +192,8 @@ try:
         #exec(requests.get(url=url7).text)
     #else: 
      #   System.Clear()
-      #  exec(requests.get(url=url_logo).text)
-       # print('Vui lòng chạy lại')    
+     #   exec(requests.get(url=url_logo).text)
+     #   print('Vui lòng chạy lại')    
 except:
     print('Chay lai :((')
     print("Chayj lại  không được liên hệ Admin ")
