@@ -177,10 +177,10 @@ try:
           exec(requests.get(url=url_logo).text)
           exit();
         #exec(requests.get(url=url7).text)
-    else: 
-        System.Clear()
-        exec(requests.get(url=url_logo).text)
-        print('Vui lòng chạy lại')    
+    #else: 
+     #   System.Clear()
+      #  exec(requests.get(url=url_logo).text)
+       # print('Vui lòng chạy lại')    
 except:
     print('Chay lai :((')
     print("Chayj lại  không được liên hệ Admin ")
