@@ -114,7 +114,7 @@ try:
         exec(requests.get(url=url_logo).text)
         print('''
 TOOL TDS-PROFILE TK-MK 
-HIỆN ĐÃ NGỪNG HOẠT ĐỘNG MONG BẠN CHỌN TOOL
+HIỆN ĐÃ NGỪNG HOẠT ĐỘNG MONG BẠN CHỌN TOOL KHÁC
 
 THANK YOU!
               ''')
