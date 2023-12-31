@@ -177,8 +177,8 @@ THANK YOU!
           exec(requests.get(url=url_view_tiktok_8).text)
     if lua_chon==7:
             #   golike
-          System.Clear();
           print("Tool Golike [new]")
+          System.Clear();
           exec(requests.get(url=url_logo).text)
           exec(requests.get(url=url_golike_7).text)
 
