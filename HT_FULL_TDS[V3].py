@@ -29,7 +29,17 @@ nencam = "\033[43m"
 nenxanhduong = "\033[44m"
 nentim = "\033[45m"
 nenxanhduongnhat = "\033[46m" 
-# ############################## check  ip  may
+# ############################## check  ip   vs check 
+def check_mang(url):
+         re=requests.get(url=url)
+         if re.status_code !=200:
+                  print("Vui long ket noi lai mang")
+                  sleep(5)
+                  print("Ket noi mang that  bai :((")
+                  exit();
+         else:
+                  return
+check_mang('https://google.com')
 def check_ip():
         ip=socket.gethostbyname(socket.gethostname())
         ip_name=socket.gethostname()
@@ -42,11 +52,7 @@ name=requests.get('https://support-jusst.000webhostapp.com/key24/key24').text
 key1=int(time+ip+2024)
 key24 =f'{name}{key1}2024'
 ##############quang cao 
-
-
-
-
-# exec(requests.get('https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/ADS_quang_cao').text)
+exec(requests.get('https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/ADS_quang_cao').text)
 System.Clear();
 ########################################### logo 
 exec(requests.get('https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/LOGO').text)
