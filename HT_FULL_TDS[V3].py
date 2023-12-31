@@ -1,16 +1,20 @@
-import requests,base64,os,sys
-from time import strftime,sleep
-from pystyle import System
+#  UPLOAD  31/12/2023
+# //////////////////////////////////////  NOI DUNG CAP NHAP //////////////////////
+# VISION 3.4
+# ////////// CẬP NHẬP  KEY  MỖI MÁY 1 KEY(socket)  KHÁC NHAU - TRỪ  KEY  VIP 
+# ////////// CẬP  NHẬP  MANG  KHONG CO MANG SE  THONG BAO NGUOI DUNG
+
+import requests ,socket,base64,os,sys
 try:
-	import requests
+    import requests ,socket
+    import  pystyle
+    from pystyle import Colors, Colorate, Write, Center, Add, Box
+    import pystyle
 except:
 	os.system("pip install requests")
-	import requests
-try:
-	from pystyle import Colors, Colorate, Write, Center, Add, Box
-except:
 	os.system("pip install pystyle")
-	from pystyle import Colors, Colorate, Write, Center, Add, Box
+from time import strftime,sleep
+from pystyle import System
 do="\033[1;31m"
 xanh_lam="\033[1;32m"
 vang="\033[1;33m"
@@ -25,46 +29,56 @@ nencam = "\033[43m"
 nenxanhduong = "\033[44m"
 nentim = "\033[45m"
 nenxanhduongnhat = "\033[46m" 
+# ############################## check  ip  may
+def check_ip():
+        ip=socket.gethostbyname(socket.gethostname())
+        ip_name=socket.gethostname()
+        return ip,ip_name;
+ip,ip_name =check_ip();
+ip=int(ip.replace('.',''))# thay doi  cac  dau cham thanh 1 so  nguyen
 ################################ quan ly 24/h
 time=int(strftime("%d%m"))
-name=requests.get('https://hoangsontung.000webhostapp.com/admin-tool/QUAN_LY_KEY24').text
-key1=str(time*10*14+2024)
-key24 =f'{name+key1}2023'
+name=requests.get('https://support-jusst.000webhostapp.com/key24/key24').text
+key1=int(time+ip+2024)
+key24 =f'{name}{key1}2024'
 ##############quang cao 
-exec(requests.get('https://hoangsontung.000webhostapp.com/admin-tool/chen_quang_cao[v3]').text)
+
+
+
+
+# exec(requests.get('https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/ADS_quang_cao').text)
 System.Clear();
 ########################################### logo 
-exec(requests.get('https://hoangsontung.000webhostapp.com/admin-tool/ADMIN_LOGO_JUSST').text)
+exec(requests.get('https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/LOGO').text)
 #########################key vip
 name_file_key='Key_tool_tds.txt' ## TEN FILE  CUA  KEY  
-url = f'https://hoangsontung.000webhostapp.com/jusst/key.html?key='+key24
+url = f'https://support-jusst.000webhostapp.com/key24.html?key='+key24
 token_web1s = '7ff9cc84-0711-4b47-ad79-3dc34fa8308c'
 web1s = requests.get(f'https://web1s.com/api?token={token_web1s}&url={url}').json()
 if web1s['status']=="error": 
         print(web1s['message'])
-        quit()       
+        quit()
 else:
         link_key=web1s['shortenedUrl']      
 ###################################################################################### CODE THUAT TOAN ################################
 def key_vip(key,link24):
      data={'key':key}
-     url='https://hoangsontung.000webhostapp.com/CHECK.php'
+     url='https://support-jusst.000webhostapp.com/key_vip/check.php'
      re=requests.post(url=url,data=data).json()
      if re['status']==False: 
         System.Clear();
         print(re['message'])
         print()
-        sleep(3)
+        sleep(1)
         print(blue,'Vui long Vuot Link:',trang,link24)
         key=input(xanh_lam+'Nhap_Key:')
         luu=open(name_file_key,'w')
         luu.write(key)
         luu.close();
-        sleep(2)
         print(do,'Vui long chay lai:()')
         quit();
      else:
-        sleep(2)
+        sleep(1)
         print(re['message'])
         luu=open(name_file_key,'w')
         luu.write(key)
@@ -106,5 +120,4 @@ if check_file_key == True:
 
 System.Clear();
 print(trang,'LOADING....')
-sleep(2)
-exec(requests.get('https://hoangsontung.000webhostapp.com/admin-tool/gop_ADMIN_TDS[3]').text)
+exec(requests.get('https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/GOP_UPLOAD_TOOL%5BV3.4%5D.py').text)
