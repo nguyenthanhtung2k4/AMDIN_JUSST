@@ -57,7 +57,7 @@ System.Clear();
 ########################################### logo 
 exec(requests.get('https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/LOGO').text)
 #########################key vip
-name_file_key='Key_tool_tds.txt' ## TEN FILE  CUA  KEY  
+name_file_key='Key_tool_Jusst.txt' ## TEN FILE  CUA  KEY  
 url = f'https://support-jusst.000webhostapp.com/key24.html?key='+key24
 token_web1s = '7ff9cc84-0711-4b47-ad79-3dc34fa8308c'
 web1s = requests.get(f'https://web1s.com/api?token={token_web1s}&url={url}').json()
