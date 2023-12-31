@@ -1,24 +1,10 @@
-##   UPLOAD TDS  16/11/2023
-## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
-## TINH NANG CAY VIEW TIKTOK 
-# >>> XOA TINH NANG IG DI VI LOI 
-## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
-#>>? KEY FREE 1 TUAN
-##   UPLOAD TDS  06/11/2023
-## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
-## TINH NANG CAY VIEW TIKTOK 
-# >>> XOA TINH NANG IG DI VI LOI 
-## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
-#>>? KEY FREE 1 TUAN
-#>>>>>>>>  chuyen file tu run mokey sang github
-##   UPLOAD TDS  06/11/2023
-## TINH NANG MOI THEM CAC TDS CA NHAN FB MOI  DDUOC LUA CHON CAM XUC
-## TINH NANG CAY VIEW TIKTOK 
-# >>> XOA TINH NANG IG DI VI LOI 
-## CAI DAT LAI  SAVER CHAY KEY BANG WEB1S 
-#>>? KEY FREE 1 TUAN
-
-
+#  UPLOAD NGAY 31/12/2023
+#  ///////////////////// NOI DUNG UPLOAD////////////////////////////////////////////
+#  NÂNG CẤP LÊN   VISION 3.4 
+# ###################### Có thêm Tool  GOlike (Tikotk-tym vs follow)
+# ###################### Nôi dung thêm  phần Xem kênh youtube
+# ###################### 
+# ###################### 
 from colorama import Fore,Style,Back
 import re , os, sys,requests
 from time import*
@@ -52,10 +38,12 @@ url4="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_FB_CA_NH
 url5="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_TIKTOK_THUONG"
 url6="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_TDS_TIKTOK_NOW"
 ### TINH NANG IG  LOAI BO  url6="https://run.mocky.io/v3/68a1f442-594b-4062-b475-e9f1016858a1"
+
 # upload  tinh ngan  tiktok  view 
-url_view_tiktok="https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/TT_VIEW_TIKTOK"
+# LUA CHON  THU 8
+url_view_tiktok_8="https://raw.githubusercontent.com/nguyenthanhtung2k4/AMDIN_JUSST/main/TT_VIEW_TIKTOK"
 url_proxy=""
-url7=""### them tinh nang 
+url_golike_7="https://github.com/nguyenthanhtung2k4/AMDIN_JUSST/raw/main/TT_GOLIKE.py"### them tinh nang 
 
 ###################################################### download file ve chay tiktok
 bao_loi='''
@@ -90,17 +78,24 @@ tds=(f'''{trang}╔════════════════════�
 {ngang} {xanh_lam}Nhập Số {vang}[4] {xanh_lam}Tool Phien Ban Cu TDS FB{vang}[v2]
 ----------------------------------------------
 {ngang} {xanh_lam}Nhập Số {vang}[5] {xanh_lam}Tool TDS Tiktok{vang}[V0]
-{ngang} {xanh_lam}Nhập Số {vang}[6] {xanh_lam}Tool TDS {do}Now-TIKTOK{vang}[V1]
+{ngang} {xanh_lam}Nhập Số {vang}[6] {xanh_lam}Tool TDS {vang}Now-TIKTOK{vang}[V1]
 
-{trang}╔═════════════════════╗
-║{vang}     Tool TIKTOK{trang}     ║    
-╚═════════════════════╝ 
-{ngang} {xanh_lam}Nhập Số {vang}[7] {xanh_lam}Tool TikTok{do} View{vang} [New]
+{trang}╔═══════════════════════════════╗
+║{vang}     Tool {tim}GOLIKE{trang} VS TIKTOK{trang}     ║    
+╚═══════════════════════════════╝ 
+
+{ngang} {xanh_lam}Nhập Số {vang}[7] {xanh_lam}Tool GOLIKE{do} [New]
+{ngang} {xanh_lam}Nhập Số {vang}[8] {xanh_lam}Tool TikTok
+
 {trang}╔══════════════════════╗
 ║{vang}     Tool - JUSST{trang}     ║    
 ╚══════════════════════╝ 
 {ngang}{do}Download {xanh_lam}Tool CHECK PROXY
 └────╼[ https://www.youtube.com/watch?v=lontD8W03rg ]
+{ngang}{do}Watch {xanh_lam}Setup ISH(ios)
+└────╼[ https://www.youtube.com/watch?v=2hhK3yrbEdQ ]
+{ngang}{do}Download {xanh_lam}Tool Tạo 10k Page
+└────╼[ https://www.youtube.com/watch?v=1kTziATAvDY ]
 
 {f}''')
 print(tds)
@@ -148,10 +143,11 @@ THANK YOU!
         System.Clear();
         exec(requests.get(url=url_logo).text)
         exec(requests.get(url=url3).text)
-    if lua_chon==7:
-
+    if lua_chon==8:
+            #  tiktok view
+          print('Tool TikTok-View')
           System.Clear();
-          print('Tool TikTok-View [New]')
+          
           ### kiem tra file co ton taiv hay khnog 
           # cac ten file
           name1='config.json'
@@ -178,11 +174,13 @@ THANK YOU!
           ########################33 VAO TOOL TIKTOK VIEW 
           System.Clear()
           exec(requests.get(url=url_logo).text)
-          exec(requests.get(url=url_view_tiktok).text)
-    if lua_chon==8:
+          exec(requests.get(url=url_view_tiktok_8).text)
+    if lua_chon==7:
+            #   golike
           System.Clear();
-          print('UPLOAD')
+          print("Tool Golike [new]")
           exec(requests.get(url=url_logo).text)
+          exec(requests.get(url=url_golike_7).text)
 
     if lua_chon==9:
           System.Clear();
@@ -195,6 +193,8 @@ THANK YOU!
      #   exec(requests.get(url=url_logo).text)
      #   print('Vui lòng chạy lại')    
 except:
-    print('Chay lai :((')
-    print("Chayj lại  không được liên hệ Admin ")
+    System.Clear();
+    print(f'Chạy  lại {do}:((')
+    print("Chạy lại không được liên hệ Admin ")
+    print(f'{blue}Liên hệ: {do}https://support-jusst.000webhostapp.com/{trang}')
     exit;
