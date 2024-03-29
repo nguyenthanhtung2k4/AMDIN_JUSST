@@ -1,2 +1,4 @@
-print('Hiện chúng tôi đang cố gắng cập nhập phiên bản nhanh nhất có thể, Vui lòng bạn quay lại tool lại sau,\n Liên hệ Admin: \n Email: justsmoke2k4master@gmail.com \n Zalo: 0985332250 \n Thank you! ')
+print('Hiện chúng tôi đã có phiên bản mới: \n Hãy Download bản mới bên dưới: ')
+print('https://drive.google.com/file/d/1uDeBSPgDtYfleP0IriY-47cdCi6wCoHC/view?usp=sharing')
+print('THANK YOU!')
 exit();
